@@ -35,6 +35,71 @@
 </html>
 
 # new file style.css
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(120deg, #e0f7fa 60%, #fffde7 100%);
+}
+
+#menu {
+    width: 180px;
+    background: #00796b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.07);
+}
+
+#menu button {
+    margin: 8px 16px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background: #004d40;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.08em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#menu button:hover {
+    background: #009688;
+    transform: scale(1.04);
+}
+
+#content {
+    flex: 1;
+    margin: 30px 40px;
+    padding: 30px 40px;
+    border-radius: 18px;
+    background: #fff3e0;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
+    min-width: 350px;
+}
+
+#title {
+    margin-bottom: 18px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #6d4c41;
+}
+
+#main {
+    font-size: 1.15em;
+    color: #4e342e;
+    line-height: 1.7;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+#new file script.js
 function show(section) {
     const title = document.getElementById("title");
     const main  = document.getElementById("main");
